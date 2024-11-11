@@ -15,7 +15,9 @@ ul li a{ /*unordered list, list, A link*/
 ul li {
     list-style: none;
 }
-h1{ /*. just refers to class*/  
+h1{   
     margin: 0;
     padding: 0;
 }
+
+/*. (period) just refers to class. for example: .heading refers to the "heading" class in a line of code*/
