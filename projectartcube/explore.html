@@ -99,10 +99,6 @@
 
             }
 
-            span{
-                padding-left: 5px;
-            }
-
             ul li{
                 list-style: none;
             }
@@ -114,7 +110,6 @@
                 width: 80%;
                 text-decoration: none;
                 color: aliceblue;
-                cursor: pointer;
                 padding-bottom: 20px;
             }
 
@@ -162,6 +157,7 @@
             .content{
                 display: flex;
                 overflow-y:scroll;
+                overflow-x: hidden;
                 flex-direction: column;
             }
 
@@ -172,19 +168,19 @@
             .profileicon{
                 width: 50px;
                 height: 50px;
-                border-radius: 25%;
+                border-radius: 50%;
                 background-color: #5A01FC;
                 
             }
 
-            .gallery{
+            .topics{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                padding-left: 60px;
+                /* padding-left: 60px;
                 padding-top: 10px;
-                padding-bottom: 40px;
+                padding-bottom: 40px; */
                 border-bottom: solid;
                 border-top: solid;
                 gap: 10px;
@@ -194,13 +190,19 @@
                 padding-left: 70px;
             } */
 
-            .galleryicon{
+            .topiclist{
+                
                 display: flex;
                 /* justify-content: space-around; */
-                justify-content: space-between;
+                /* justify-content: space-between; */
+                flex-direction: column;
                 width: 100%;
                 padding-top: 15px;
-                padding-right: 60px;
+                border-bottom: solid;
+                padding-bottom: 15px;
+                /* padding-right: 15px;  */
+                padding-left: 15px;
+                
             }
 
             .icon{
@@ -231,15 +233,29 @@
                 margin-left: 20px;
             }
 
-            .svgicons{
-                padding-right: 5px;
-                /* padding-bottom: 20px; */
-                margin-left: 5px;
-                align-items: center;
-                filter: invert(11%) sepia(58%) saturate(5780%) hue-rotate(259deg) brightness(135%) contrast(136%);
+            .imageborder{
+                object-fit: cover;
+            }
+           
+            .sub2{
+                font-size: 16px;
+                color: gray;
+                padding: 0;
+                margin: 0;
             }
 
-            
+            .head2{
+                font-size: 32px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .svgicons{
+                padding-right: 5px;
+                
+                margin-left: 5px;
+                filter: invert(11%) sepia(58%) saturate(5780%) hue-rotate(259deg) brightness(135%) contrast(136%);
+            }
             
 
     </style>
@@ -321,7 +337,6 @@
                         </li>
 
                     </ul>
-
                 </nav>
 
                 <button class="post">
@@ -340,16 +355,16 @@
 
                     <div class="discover">
 
-                        <a href="#discover">
-                            Discover
+                        <a href="#for-you">
+                            For You
                         </a>
 
                     </div>
 
                     <div class="following">
 
-                        <a href="#following">
-                            Following
+                        <a href="#trending">
+                            Trending 
                         </a>
 
                     </div>
@@ -358,137 +373,174 @@
 
                 <div class="content">
                     
-                    <div class="gallery">
-
-                        <div class="profileicon">
-
-                        </div>
+                    <div class="topics">
 
                         <img class="imageborder" src="assets/a.png"
-                        width= 500px>
+                        width= 700px
+                        height= 400px>
+                        
 
-                        <div class="galleryicon">
 
+                    </div>
 
+                    <div class="topiclist">
 
-                            <button class="icon">
+                        <div class="subheading">
 
-                                <img src="assets/profile.png"
-                                width=30px>
+                            <p class="sub2">
+                                Subheading 
+                            </p>
 
-                            </button>
+                        </div>
 
-                            <button class="icon">
-
-                                <img src="assets/home.png"
-                                width=30px>
-                                
-                            </button>
-
-                            <button class="icon">
-
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
-
-                            <button class="icon">
-
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
-
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
                         </div>
 
                     </div>
 
-                    <div class="gallery">
+                    <div class="topiclist">
 
-                        <div class="profileicon">
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
 
                         </div>
 
-                        <img class="imageborder" src="assets/c.png"
-                        width= 500px>
-
-                        <div class="galleryicon">
-
-
-
-                            <button class="icon">
-
-                                <img src="assets/profile.png"
-                                width=30px>
-
-                            </button>
-
-                            <button class="icon">
-
-                                <img src="assets/home.png"
-                                width=30px>
-                                
-                            </button>
-
-                            <button class="icon">
-
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
-
-                            <button class="icon">
-
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
-
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
                         </div>
 
                     </div>
 
-                    <div class="gallery">
+                    <div class="topiclist">
 
-                        <div class="profileicon">
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
 
                         </div>
 
-                        <img class="imageborder" src="assets/b.jpg"
-                        width= 500px>
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
 
-                        <div class="galleryicon">
+                    </div>
 
+                    <div class="topiclist">
 
+                        <div class="subheading">
 
-                            <button class="icon">
+                            <p class="sub2">
+                                Subheading 
+                            </p>
 
-                                <img src="assets/profile.png"
-                                width=30px>
+                        </div>
 
-                            </button>
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
 
-                            <button class="icon">
+                    </div>
 
-                                <img src="assets/home.png"
-                                width=30px>
-                                
-                            </button>
+                    <div class="topiclist">
 
-                            <button class="icon">
+                        <div class="subheading">
 
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
+                            <p class="sub2">
+                                Subheading 
+                            </p>
 
-                            <button class="icon">
+                        </div>
 
-                                <img src="assets/explore.png"
-                                width=30px>
-                                
-                            </button>
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
 
+                    </div>
+
+                    <div class="topiclist">
+
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
+
+                        </div>
+
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="topiclist">
+
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
+
+                        </div>
+
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="topiclist">
+
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
+
+                        </div>
+
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="topiclist">
+
+                        <div class="subheading">
+
+                            <p class="sub2">
+                                Subheading 
+                            </p>
+
+                        </div>
+
+                        <div class="heading">
+                            <a href="#heading" class="head2">
+                                Heading 
+                            </a>
                         </div>
 
                     </div>
