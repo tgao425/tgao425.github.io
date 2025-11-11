@@ -1,0 +1,47 @@
+body {
+	background-color: #EEF5DB;
+}
+
+h1 {
+	font-family: "Libre Franklin";
+	font-weight: 900;
+	font-size: 72;
+	color: #FE5F55;
+}
+
+a {
+	font-family: "Libre Franklin";
+	font-weight: 100;
+	font-size: 24;
+	color: #36282A;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #D68FD6;
+}
+a:active {
+  color: #028090;
+}
+
+.md-img {
+	width: 1920px;
+}
+
+.sm-img {
+	width: 200px;
+}
+
+/* <weight>: Use a value from 100 to 900*/
+/* <uniquifier>: Use a unique and descriptive class name*/
+
+.libre-franklin-<uniquifier> {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/*shift TAB to delete indents*/
