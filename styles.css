@@ -1,0 +1,23 @@
+body{
+    background-color: #162455;
+    color:rgb(255, 0, 230);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+ul li a{ /*unordered list, list, A link*/
+    text-decoration: none;
+    
+    
+    color:rgb(255, 63, 236);
+}
+ul li {
+    list-style: none;
+}
+h1{   
+    margin: 0;
+    padding: 0;
+}
+
+/*. (period) just refers to class. for example: .heading refers to the "heading" class in a line of code*/
