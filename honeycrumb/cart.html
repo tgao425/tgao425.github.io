@@ -1,0 +1,571 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Honey Crumb Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    </head>
+
+		
+
+		<style> 
+			*{
+    			padding:0;
+    			margin:0;
+  			}
+			/*div {
+				text-align: center;
+				border-style: solid;
+				border-width: 1px;
+				padding: 25px;
+				margin: 25px;
+
+			} */
+
+			.boxBorder {
+				border-style: solid;
+				border-width: 1px;
+
+			}
+
+			.column {
+				width: 33%;
+				float: left;
+			}
+
+			.header {
+				background-color: rgb(097, 052, 008);
+				color: white;
+				text-align: center;
+				
+				width: 100%;
+				padding-left: 10px;
+				padding-right: 10px;
+				height: 30px;
+
+			}
+
+			.header2 {
+				background-color: rgb(253, 254, 220);
+				color: rgb(233, 167, 054);
+				text-align: center;
+				top: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				height: 50px;
+
+			}
+
+			
+.footer {
+    background-color: rgb(097, 052, 008);
+    color: rgb(233, 167, 054); /* Changed from black to your orange */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+
+.footer a, .footer .text-body-secondary {
+    color: rgb(233, 167, 054) !important; 
+}
+
+
+.footer .btn-primary {
+    background-color: rgb(233, 167, 054);
+    border-color: rgb(233, 167, 054);
+    
+    
+    color: rgb(097, 052, 008); 
+    font-weight: bold;
+}
+
+
+.footer .btn-primary:hover {
+    background-color: rgb(253, 245, 220); 
+    border-color: rgb(255, 180, 60);
+    color: rgb(233, 167, 054);
+}
+
+.footer input[type="email"] {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow; 
+}
+
+
+.footer input[type="email"]:focus {
+    background-color: lightgoldenrodyellow;
+    box-shadow: none; /* Removes the blue glow Bootstrap adds */
+    border-color: rgb(233, 167, 054); /* Adds an orange glow instead */
+}
+
+
+			body {
+			  background-color: lightgoldenrodyellow;
+			}
+
+			nav{
+				margin-left: 250px;
+				margin-right: 250px;
+			}
+
+			.headerimg{
+				padding-top: 10px;
+				width: 90px;
+				display: flex;
+				align-items: center;
+			}
+
+			.heroimg{
+				height: 600px; object-fit: cover;
+			}
+
+			.featuredimg{
+				object-fit: cover;
+				height: 300px;
+			}
+
+
+			/* This matches your existing 'nav' margins exactly */
+.content-wrapper {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.card{
+				height: 350px;
+				width: 250px;
+				border-radius: 10px;
+				background-color: transparent;
+        border-color: transparent;
+			}
+.card p{
+	text-align: center;
+}
+
+/* Optional: Ensures images inside cards don't overflow */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}			
+
+			h2{
+				text-align: center;
+				padding: 70px;
+				color: rgb(097, 052, 008);
+			}
+
+			.nav-link{
+				color: rgb(233, 167, 054);
+				font-weight: 400;
+			}
+
+			.img-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.img-button img {
+  display: block;
+  width: 45px;
+}
+
+			.cart-button{
+				background: none;
+  border: none;
+  padding-bottom: 10;
+  cursor: pointer;
+
+			}
+
+			.cart-button img {
+  display: block;
+  width: 55px;
+}
+
+/* 1. Change "Your Cart" text to Orange */
+.text-primary {
+    color: rgb(233, 167, 54) !important;
+}
+
+/* 2. Change the "3" Badge background to Orange */
+.bg-primary {
+    background-color: rgb(233, 167, 54) !important;
+    color: rgb(97, 52, 8) !important; /* Brown text for contrast */
+}
+
+/* 3. Change all Blue Buttons to Orange (Checkout & Subscribe) */
+.btn-cart {
+    background-color: rgb(233, 167, 054);
+    border-color: rgb(233, 167, 054);
+    
+    
+    color: rgb(097, 052, 008); 
+    font-weight: bold;
+}
+
+/* 4. Add a hover effect for the buttons */
+.btn-cart:hover {
+    background-color: rgb(097, 052, 008) ;
+    border-color: rgb(255, 180, 60);
+    color: rgb(253, 245, 220);
+    }
+    .navbar input[type="search"] {
+    background-color: rgb(233, 167, 054) !important; /* Makes it see-through or solid orange if you prefer */
+    border: 1px solid rgb(233, 167, 054) !important; /* Orange Border */
+    color: rgb(253, 254, 220) !important; /* Beige Text */
+    width: 400px ; /* Forces it to be thinner (default is auto/wide) */
+    height: 40px!important;
+    border-radius: 40px;
+    margin-top: 12px;
+}
+
+/* Changes the placeholder text (the word "Search") to Beige */
+.navbar input[type="search"]::placeholder {
+    color: rgb(253, 254, 220) !important;
+    opacity: 0.7; /* Optional: makes it slightly see-through */
+}
+
+/* Removes the blue glow when you click inside it */
+.navbar input[type="search"]:focus {
+    box-shadow: none !important;
+    border-color: rgb(233, 167, 054) !important;
+    background-color: transparent !important;
+}
+
+
+		</style>
+
+
+	<body>
+
+		<div class="header">
+			<p>MOVING FREE SHIPPING GLOBAL CALLOUT</p>
+		</div>
+
+		<!-- /* taken from bootstrap */ -->
+		<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="homepage.html"> <img class="headerimg" src="honey_crumb_logo.svg"> </img> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="new.html">Seasonal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="corporate.html">Corporate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="giftsets.html">Gift Sets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> 
+        <button class="img-button"> <img src="search.svg"> </img> </button>
+        <button class="img-button"> <img src="account.svg"> </img> </button>
+        <a href="cart.html" class="cart-button"> <img src="cart.svg"> </img> </a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container mb-5">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="honey_crumb_logo.svg" alt="" width="100" height="100">
+    <h1 class="h2">Checkout form</h1>
+    <!-- <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> -->
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Your cart</span>
+        <span class="badge bg-primary rounded-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Product name</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Second product</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Third item</h6>
+            <small class="text-body-secondary">Brief description</small>
+          </div>
+          <span class="text-body-secondary">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>EXAMPLECODE</small>
+          </div>
+          <span class="text-success">−$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <button type="submit" class="btn btn-secondary">Redeem</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="username" placeholder="Username" required="">
+              <div class="invalid-feedback">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" required="">
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required="">
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info">
+          <label class="form-check-label" for="save-info">Save this information for next time</label>
+        </div>
+
+        <hr class="my-4">
+
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+            <label class="form-check-label" for="credit">Credit card</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="debit">Debit card</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+            <small class="text-body-secondary">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="w-100 btn btn-cart btn-lg" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 footer">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 HoneyCrumb, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+            </div>
+
+        </div> </div> </footer>
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+
+
+</html>

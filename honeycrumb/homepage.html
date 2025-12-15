@@ -1,0 +1,400 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Honey Crumb Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    </head>
+
+		
+
+		<style> 
+			*{
+    			padding:0;
+    			margin:0;
+  			}
+			/*div {
+				text-align: center;
+				border-style: solid;
+				border-width: 1px;
+				padding: 25px;
+				margin: 25px;
+
+			} */
+
+			.boxBorder {
+				border-style: solid;
+				border-width: 1px;
+
+			}
+
+			.column {
+				width: 33%;
+				float: left;
+			}
+
+			.header {
+				background-color: rgb(097, 052, 008);
+				color: white;
+				text-align: center;
+				
+				width: 100%;
+				padding-left: 10px;
+				padding-right: 10px;
+				height: 30px;
+
+			}
+
+			.header2 {
+				background-color: rgb(253, 254, 220);
+				color: rgb(233, 167, 054);
+				text-align: center;
+				top: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				height: 50px;
+
+			}
+
+			
+.footer {
+    background-color: rgb(097, 052, 008);
+    color: rgb(233, 167, 054); /* Changed from black to your orange */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+
+.footer a, .footer .text-body-secondary {
+    color: rgb(233, 167, 054) !important; 
+}
+
+
+.footer .btn-primary {
+    background-color: rgb(233, 167, 054);
+    border-color: rgb(233, 167, 054);
+    
+    
+    color: rgb(097, 052, 008); 
+    font-weight: bold;
+}
+
+
+.footer .btn-primary:hover {
+    background-color: rgb(253, 245, 220); 
+    border-color: rgb(255, 180, 60);
+    color: rgb(233, 167, 054);
+}
+
+.footer input[type="email"] {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow; 
+}
+
+
+.footer input[type="email"]:focus {
+    background-color: lightgoldenrodyellow;
+    box-shadow: none; /* Removes the blue glow Bootstrap adds */
+    border-color: rgb(233, 167, 054); /* Adds an orange glow instead */
+}
+
+
+			body {
+			  background-color: lightgoldenrodyellow;
+			}
+
+			nav{
+				margin-left: 250px;
+				margin-right: 250px;
+			}
+
+			.headerimg{
+				padding-top: 10px;
+				width: 90px;
+				display: flex;
+				align-items: center;
+			}
+
+			.heroimg{
+				height: 600px; object-fit: cover;
+				border-top-left-radius: 25px;
+				border-top-right-radius: 25px;
+			}
+
+			.featuredimg{
+				object-fit: cover;
+				height: 300px;
+			}
+
+
+			/* This matches your existing 'nav' margins exactly */
+.content-wrapper {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.card{
+				height: 350px;
+				width: 250px;
+				border-radius: 10px;
+				background-color: transparent;
+        border-color: transparent;
+			}
+.card p{
+	text-align: center;
+}
+
+/* Optional: Ensures images inside cards don't overflow */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}			
+
+			h2{
+				text-align: center;
+				padding: 70px;
+				color: rgb(097, 052, 008);
+			}
+
+			.nav-link{
+				color: rgb(233, 167, 054);
+				font-weight: 400;
+			}
+
+			.img-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.img-button img {
+  display: block;
+  width: 45px;
+}
+
+			.cart-button{
+				background: none;
+  border: none;
+  padding-bottom: 10;
+  cursor: pointer;
+
+			}
+
+			.cart-button img {
+  display: block;
+  width: 55px;
+}
+
+/* Custom Search Bar Styles */
+.navbar input[type="search"] {
+    background-color: rgb(233, 167, 054) !important; /* Makes it see-through or solid orange if you prefer */
+    border: 1px solid rgb(233, 167, 054) !important; /* Orange Border */
+    color: rgb(253, 254, 220) !important; /* Beige Text */
+    width: 400px ; /* Forces it to be thinner (default is auto/wide) */
+    height: 40px!important;
+    border-radius: 40px;
+    margin-top: 12px;
+}
+
+/* Changes the placeholder text (the word "Search") to Beige */
+.navbar input[type="search"]::placeholder {
+    color: rgb(253, 254, 220) !important;
+    opacity: 0.7; /* Optional: makes it slightly see-through */
+}
+
+/* Removes the blue glow when you click inside it */
+.navbar input[type="search"]:focus {
+    box-shadow: none !important;
+    border-color: rgb(233, 167, 054) !important;
+    background-color: transparent !important;
+}
+
+
+		</style>
+
+
+	<body>
+
+		<div class="header">
+			<p>MOVING FREE SHIPPING GLOBAL CALLOUT</p>
+		</div>
+
+		<!-- /* taken from bootstrap */ -->
+		<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="homepage.html"> <img class="headerimg" src="honey_crumb_logo.svg"> </img> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="new.html">Seasonal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="corporate.html">Corporate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="giftsets.html">Gift Sets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> 
+        <button class="img-button"> <img src="search.svg"> </img> </button>
+        <button class="img-button"> <img src="account.svg"> </img> </button>
+        <a href="cart.html" class="cart-button"> <img src="cart.svg"> </img> </a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+		<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="hero1.jpg" class="d-block w-100 heroimg" alt="Hero1">
+  </div>
+  <div class="carousel-item">
+    <img src="hero2.jpg" class="d-block w-100 heroimg" alt="Hero2">
+  </div>
+  <div class="carousel-item">
+    <img src="hero3.jpg" class="d-block w-100 heroimg" alt="Hero3">
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+		<div>
+			<h2>
+				Featured Items
+			</h2>
+		</div>
+
+		<div class="content-wrapper"> 
+  <div class="container-fluid d-flex justify-content-between">
+    
+    <div class="card">
+      <img class="featuredimg" src="acmuffin.jpg">
+      <p> Apple Cinnamon Muffin</p>
+    </div>
+
+    <div class="card">
+      <img class="featuredimg" src=" bbmuffin.jpg ">
+      <p> Blueberry Muffin</p>
+    </div>
+
+    <div class="card">
+      <img class="featuredimg" src="iccookie.jpg ">
+      <p> Irish Coffee Cookie</p>
+    </div>
+
+    <div class="card">
+      <img class="featuredimg" src="cbcookie.jpg">
+      <p> Caramel Bits Cookie</p>
+    </div>
+
+    <div class="card">
+      <img class="featuredimg" src="hccookie.jpg ">
+      <p> Honey Crumble Cookie</p>
+    </div>
+
+  </div>
+</div>
+
+
+		</div>
+
+		<footer class="py-5 footer">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 HoneyCrumb, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+            </div>
+
+        </div> </div> </footer>
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+
+
+</html>
