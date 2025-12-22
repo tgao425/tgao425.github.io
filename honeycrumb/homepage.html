@@ -159,6 +159,25 @@
         border-color: rgb(233, 167, 054) !important;
         background-color: transparent !important;
       }
+
+      /* Hero Button Styling */
+      .btn-hero {
+        background-color: rgb(233, 167, 054);
+        border: 2px solid rgb(233, 167, 054);
+        color: rgb(097, 052, 008);
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 30px;
+        margin: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .btn-hero:hover {
+        background-color: rgb(097, 052, 008);
+        border-color: rgb(097, 052, 008);
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -188,6 +207,7 @@
         </div>
       </div>
     </nav>
+
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -195,9 +215,27 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active"><img src="hero1.jpg" class="d-block w-100 heroimg" alt="Hero1"></div>
-        <div class="carousel-item"><img src="hero2.jpg" class="d-block w-100 heroimg" alt="Hero2"></div>
-        <div class="carousel-item"><img src="hero3.jpg" class="d-block w-100 heroimg" alt="Hero3"></div>
+        <div class="carousel-item active">
+          <img src="hero1.jpg" class="d-block w-100 heroimg" alt="Hero1">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <a href="shop.html" class="btn-hero shadow">Shop All</a>
+            <a href="corporate.html" class="btn-hero shadow">Catering</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="hero2.jpg" class="d-block w-100 heroimg" alt="Hero2">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <a href="shop.html" class="btn-hero shadow">Shop All</a>
+            <a href="corporate.html" class="btn-hero shadow">Catering</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="hero3.jpg" class="d-block w-100 heroimg" alt="Hero3">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <a href="shop.html" class="btn-hero shadow">Shop All</a>
+            <a href="corporate.html" class="btn-hero shadow">Catering</a>
+          </div>
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -208,6 +246,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <div><h2>Featured Items</h2></div>
     <div class="content-wrapper">
       <div class="container-fluid d-flex justify-content-between">
@@ -218,6 +257,7 @@
         <div class="card"><img class="featuredimg" src="hccookie.jpg"><p>Honey Crumble Cookie</p></div>
       </div>
     </div>
+
     <footer class="py-5 footer">
       <div class="content-wrapper">
         <div class="container-fluid">
